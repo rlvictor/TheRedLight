@@ -1,0 +1,141 @@
+.main-wrapper {
+  //   width: 100vw;
+  background-color: rgb(9, 9, 9);
+  display: grid;
+  grid-template-columns: minmax(558px, 1fr) minmax(865px, 1fr);
+
+  &-left {
+    padding: 70px 0;
+    display: grid;
+    grid-template-rows: 600px 300px;
+    row-gap: 30px;
+    justify-content: center;
+    //  width: 558px;
+    //  height: 100vh;
+    background: url(../img/Left_background.png) center center/cover no-repeat;
+    border-right: 6px solid black;
+    .logo {
+      position: relative;
+      font-family: "Rubik Distressed";
+      display: flex;
+      margin: 0 auto;
+      width: 330px;
+      flex-direction: column;
+      align-items: center;
+
+      &__tittle {
+        color: #ff0404;
+        font-size: 118px;
+        text-align: right;
+        z-index: 2;
+      }
+      &__subtittle {
+        width: 100px;
+        position: absolute;
+        top: 50px;
+        left: -22px;
+        color: #fff;
+        font-size: 58px;
+        transform: rotate(-90deg);
+        z-index: 2;
+      }
+      &__divider {
+        width: 90px;
+        height: 2px;
+        background-color: #ff0404;
+        position: absolute;
+        top: 135px;
+        left: 150px;
+      }
+      &__img {
+        position: relative;
+        display: block;
+        margin-top: 20px;
+        z-index: 2;
+        &-bg {
+          position: absolute;
+          top: 223px;
+          left: -66px;
+          z-index: 3;
+        }
+        &-cargo {
+          position: absolute;
+          top: 255px;
+          z-index: 1;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .stop {
+      position: relative;
+      img {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        z-index: 3;
+      }
+      &__tittle {
+        color: #ff0404;
+        font-family: "SeoulHangang";
+        font-size: 55px;
+        position: absolute;
+        top: 85px;
+        left: 45px;
+        z-index: 1;
+      }
+    }
+  }
+  &-right {
+    position: relative;
+    display: grid;
+    grid-template-rows: 553px 514px;
+    //  width: 875px;
+    background: url(../img/Right-bg.png) center center/cover no-repeat;
+    .group {
+      width: 865px;
+      position: absolute;
+      top: 282px;
+      img {
+        width: 100%;
+      }
+    }
+    .fire {
+      img {
+        width: 100%;
+      }
+    }
+    .main-wrapper-right-bottom {
+      position: relative;
+      background: url(../img/Right_background.png) center center/cover no-repeat;
+      border-top: 6px solid black;
+      .news {
+        position: absolute;
+        top: 190px;
+        left: 165px;
+        &__tittle {
+          font-family: "RubikMonoOne";
+          color: rgba(255, 255, 255, 0.731);
+          font-size: 26px;
+          position: absolute;
+          top: 25px;
+          left: 130px;
+        }
+      }
+    }
+  }
+  .footer {
+    width: 675px;
+    height: 60px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-color: #520000;
+    border-top: 6px solid black;
+    border-left: 6px solid black;
+    border-right: 6px solid black;
+    z-index: 6;
+  }
+}
