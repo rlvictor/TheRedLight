@@ -1,3 +1,6 @@
+.about {
+  height: 800px;
+}
 .wrapper {
   display: flex;
   width: 100%;
@@ -77,7 +80,11 @@
     color: #fff;
     font-size: 25px;
     &__img {
+      margin-right: 30px;
       width: 470px;
+      img {
+        width: 100%;
+      }
     }
     &__descr {
       width: 660px;
