@@ -1,9 +1,35 @@
 .galery {
-  height: 900px;
+  height: 100%;
+  display: flex;
 }
 .wrapper {
   .galery__img {
     margin-top: 120px;
     margin-left: 100px;
+  }
+  .galery__photos {
+    width: 900px;
+    margin-left: 50px;
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 70px;
+    &-item {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0px 0px 20px rgba(63, 0, 0, 0.822);
+      transition: all 0.6s;
+      &:hover {
+        box-shadow: 0px 0px 40px rgb(255, 0, 0);
+        transition: all 0.6s;
+      }
+      img {
+        width: 200px;
+        height: 130px;
+        border-radius: 5px;
+        object-fit: cover;
+      }
+    }
   }
 }
