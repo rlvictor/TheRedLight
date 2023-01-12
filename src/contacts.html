@@ -42,29 +42,33 @@
           </div>
           <div class="contacts__block-in">
             <div class="contacts__block-in-email">
-              <a href="#"
-                ><img src="../icons/icon_letter.svg" alt="letter" /><span
-                  >vityad888@yandex.ru</span
-                >
-              </a>
+              <img src="../icons/icon_letter.svg" alt="letter" /><button
+                data-modal="feedback"
+                class="button"
+              >
+                Напишите нам
+              </button>
             </div>
             <div class="contacts__block-in-telephone">
-              <a href="#"
+              <a href="tel:+79295432897"
                 ><img src="../icons/icon_phone.svg" alt="phone" />
-                <span>+79295432897</span>
+                <span>+7(929)543-28-97</span>
               </a>
             </div>
             <div class="contacts__block-in-socials">
               <div class="contacts__block-in-socials-whatsupp">
-                <a href="#"
+                <a
+                  href="whatsapp://send?phone=79295432897&text=Здравствуйте,Виктор!"
                   ><img src="../icons/whatsappIcon.svg" alt="whatsupp"
                 /></a>
               </div>
               <div class="contacts__block-in-socials-vk">
-                <a href="#"><img src="../icons/VkIcon.svg" alt="vk" /></a>
+                <a href="https://vk.com/the_red_light"
+                  ><img src="../icons/VkIcon.svg" alt="vk"
+                /></a>
               </div>
               <div class="contacts__block-in-socials-telegram">
-                <a href="#"
+                <a href="https://t.me/rlvictor"
                   ><img src="../icons/telegramIcon.svg" alt="telegram"
                 /></a>
               </div>
@@ -80,11 +84,42 @@
         </div>
         <div class="footer__com">&copy; the Red Light | 2023</div>
         <div class="footer__socials">
-          <a href="#"><img src="icons/telegramIcon.svg" alt="telegram" /></a
-          ><a href="#"><img src="icons/VkIcon.svg" alt="VK" /></a
-          ><a href="#"><img src="icons/whatsappIcon.svg" alt="whatsapp" /></a>
+          <a href="https://t.me/rlvictor"
+            ><img src="icons/telegramIcon.svg" alt="telegram" /></a
+          ><a href="https://vk.com/the_red_light"
+            ><img src="icons/VkIcon.svg" alt="VK" /></a
+          ><a href="whatsapp://send?phone=79295432897&text=Здравствуйте,Виктор!"
+            ><img src="icons/whatsappIcon.svg" alt="whatsapp"
+          /></a>
         </div>
       </footer>
+
+      <div class="overlay">
+        <div class="modal">
+          <div class="modal__close">&times;</div>
+          <div class="modal__tittle">Просто заполните форму</div>
+          <div class="modal__subtittle">и мы вам ответим</div>
+          <form class="feed-form" action="#">
+            <input name="name" required placeholder="Ваше имя" type="text" />
+            <input name="phone" required placeholder="Ваш телефон" />
+            <input
+              name="email"
+              required
+              placeholder="Ваш E-mail"
+              type="email"
+            />
+            <input
+              name="textarea"
+              required
+              placeholder="Напишите что-нибудь"
+              type="text"
+            />
+            <button class="button">отправить</button>
+          </form>
+        </div>
+      </div>
     </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scriptModal.js"></script>
   </body>
 </html>

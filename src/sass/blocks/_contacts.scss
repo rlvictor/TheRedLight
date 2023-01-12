@@ -1,13 +1,9 @@
-.contacts {
-  height: 800px;
-}
 .wrapper {
-  // height: 900px;
   .contacts {
     width: 100%;
+    height: 800px;
     margin: 0 auto;
     margin-top: 130px;
-    // margin-left: 100px;
     display: grid;
     grid-template-columns: 400px 800px;
     grid-template-rows: 300px 400px;
@@ -22,7 +18,7 @@
     &__image {
       margin-right: 300px;
       width: 500px;
-      // height: 350px;
+
       img {
         width: 100%;
       }
@@ -54,9 +50,27 @@
         &-email {
           position: relative;
           span {
+            position: relative;
+            top: -6px;
+            left: 15px;
+            font-size: 20px;
+          }
+          .button {
+            width: 160px;
+            height: 30px;
             position: absolute;
-            top: 3px;
+            top: -5px;
             left: 40px;
+            cursor: pointer;
+            background-color: #520000;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 27px;
+            border-radius: 5px;
+            &:hover {
+              background-color: #a10000;
+            }
           }
           a {
             text-decoration: none;
@@ -75,6 +89,85 @@
           img {
             width: 25px;
           }
+        }
+      }
+    }
+  }
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.56);
+  // transition: all 0.6s;
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 382px;
+    min-height: 402px;
+    background: #520000;
+    padding: 38px 40px 40px 40px;
+    // border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgb(255, 0, 0);
+    // transition: all 0.6s;
+    &__close {
+      position: absolute;
+      top: 0;
+      right: -50px;
+      font-size: 50px;
+      line-height: 21px;
+      color: #c70101;
+      cursor: pointer;
+      text-shadow: 2px 1px 3px black;
+    }
+    &__tittle {
+      font-family: "SeoulHangang";
+      font-weight: 700;
+      font-size: 21px;
+      text-align: center;
+      color: #e1e1e1;
+      text-shadow: 0px 0px 5px black;
+    }
+    &__subtittle {
+      font-family: "SeoulHangang";
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      color: #e1e1e1;
+    }
+    .feed-form {
+      margin-top: 25px;
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      input {
+        height: 50px;
+        border-radius: 5px;
+        background: #fff;
+        margin-bottom: 15px;
+        border: none;
+        padding: 0 20px;
+        font-weight: 300;
+        font-size: 14px;
+        color: #4b4b4b;
+      }
+      .button {
+        width: 300px;
+        height: 50px;
+        cursor: pointer;
+        background-color: #a10000;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 27px;
+        border-radius: 5px;
+        &:hover {
+          background-color: #d70000;
         }
       }
     }
