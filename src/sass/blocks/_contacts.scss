@@ -171,5 +171,34 @@
         }
       }
     }
+    label.error {
+      font-family: "SeoulHangang";
+      font-size: 16px;
+      margin: 0 auto 15px auto;
+      color: #fff;
+    }
+    textarea {
+      margin: 0 auto 15px auto;
+      padding: 10px;
+      width: 300px;
+      height: 50px;
+      border-radius: 5px;
+    }
+    &__feed {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 382px;
+      min-height: 200px;
+      background: #520000;
+      padding: 38px 40px 40px 40px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 40px rgb(255, 0, 0);
+      .modal__subtittle {
+        margin-top: 30px;
+      }
+    }
   }
 }
