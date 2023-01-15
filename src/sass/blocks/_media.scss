@@ -1,0 +1,228 @@
+@media (max-width: 1439px) {
+  .main-wrapper {
+    grid-template-columns: minmax(100px, 400px) minmax(160px, 800px);
+    &-right {
+      grid-template-columns: minmax(160px, 800px);
+      grid-template-rows: 490px 574px;
+      .menu {
+        width: 700px;
+        flex-wrap: wrap;
+        &__item-5 {
+          margin-top: 25px;
+        }
+      }
+      .group {
+        top: 220px;
+        left: -83px;
+      }
+      .main-wrapper-right-bottom {
+        .news {
+          left: 88px;
+        }
+        .slick-list.draggable .slick-track .slick-slide {
+          img {
+            top: 43px;
+          }
+        }
+      }
+    }
+  }
+  .main-wrapper-right .main-wrapper-right-bottom .slider-wrapper {
+    width: 783px;
+  }
+  .main-wrapper-right .main-wrapper-right-bottom .slider {
+    width: 783px;
+  }
+  .main-wrapper-right .main-wrapper-right-bottom .slick-list.draggable {
+    width: 783px;
+  }
+}
+
+.wrapper {
+  .music {
+    width: 100%;
+    &__img {
+      margin-left: 35px;
+    }
+    &__tracks {
+      margin-left: 40px;
+    }
+    &__albums {
+      &-tittle {
+        font-size: 25px;
+      }
+      &-items {
+        font-size: 20px;
+      }
+      &-item {
+        width: 500px;
+        audio {
+          width: 300px;
+        }
+      }
+    }
+  }
+  .galery {
+    &__img {
+      margin-left: 20px;
+    }
+    &__photos {
+      width: 839px;
+    }
+  }
+  .contacts {
+    grid-template-columns: 400px 600px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .main-wrapper {
+    grid-template-columns: minmax(100px, 340px) minmax(160px, 665px);
+    &-right {
+      grid-template-rows: 417px 650px;
+      .group {
+        top: 146px;
+        left: -198px;
+      }
+    }
+    .main-wrapper-right-bottom {
+      .news {
+        width: 600px;
+        left: 60px;
+        img {
+          width: 100%;
+        }
+        &__descr {
+          width: 450px;
+        }
+      }
+      .slick-list.draggable .slick-track .slick-slide {
+        img {
+          top: 32px;
+          width: 135px;
+          height: 93px;
+        }
+      }
+    }
+  }
+  .main-wrapper-right .main-wrapper-right-bottom .slider-wrapper {
+    width: 667px;
+  }
+  .main-wrapper-right .main-wrapper-right-bottom .slider {
+    width: 667px;
+  }
+  .main-wrapper-right .main-wrapper-right-bottom .slick-list.draggable {
+    width: 667px;
+  }
+  .wrapper {
+    .red-man {
+      left: 30px;
+      right: 0;
+    }
+    .galery {
+      &__photos {
+        width: 660px;
+      }
+    }
+    .contacts {
+      grid-template-columns: 400px 500px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-wrapper {
+    &-right {
+      .menu {
+        width: 660px;
+      }
+      .group {
+        left: -230px;
+      }
+    }
+    .main-wrapper-right-bottom {
+      .news {
+        left: 33px;
+      }
+    }
+    .main-wrapper-right .main-wrapper-right-bottom .slider-wrapper {
+      width: 635px;
+    }
+    .main-wrapper-right .main-wrapper-right-bottom .slider {
+      width: 635px;
+    }
+    .main-wrapper-right .main-wrapper-right-bottom .slick-list.draggable {
+      width: 635px;
+    }
+  }
+  .wrapper {
+    .galery {
+      &__photos {
+        width: 640px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .main-wrapper {
+    grid-template-columns: minmax(100px, 992px);
+    .menu {
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      background-color: #bc0000db;
+      left: -50%;
+      top: 0;
+      height: 100%;
+      transition: all 0.6s;
+      &-active {
+        left: 0;
+        transition: all 0.6s;
+      }
+      &__item {
+        transition: all 0.6s;
+        margin-bottom: 10px;
+        &:hover {
+          transition: all 0.6s;
+          transform: translateY(0px) scale(1.2);
+        }
+      }
+      &__item-5 {
+        margin-top: 0;
+      }
+      &__hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: -1030px;
+        right: 30px;
+        transition: all 0.6s;
+        span {
+          margin-bottom: 7px;
+          display: block;
+          width: 31px;
+          height: 2px;
+          background-color: red;
+          transition: all 0.6s;
+        }
+        &-active {
+          transition: all 0.6s;
+          span {
+            margin-bottom: -2px;
+            &:nth-child(1) {
+              transform: rotate(-45deg);
+            }
+            &:nth-child(2) {
+              display: none;
+            }
+            &:nth-child(3) {
+              transform: rotate(45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

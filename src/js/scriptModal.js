@@ -3,8 +3,8 @@ $(document).ready(function () {
     $(".overlay, .modal").fadeIn("slow");
   });
   $(".modal__close").on("click", function () {
-    $(".overlay, .modal").fadeOut("slow");
-    window.location.reload();
+    $(".overlay, .modal, .feed-form").fadeOut("slow");
+    setTimeout(() => window.location.reload(), 1000);
   });
 
   function validateForms(form) {
