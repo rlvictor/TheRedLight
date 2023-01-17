@@ -19,6 +19,7 @@ $(document).ready(function () {
           required: true,
           email: true,
         },
+        textarea: "required",
       },
       messages: {
         name: {
